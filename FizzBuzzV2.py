@@ -1,19 +1,14 @@
-##Write a program that prints the numbers from 1 to 100. 
-##But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". 
-##For numbers which are multiples of both three and five print "FizzBuzz".
-
-for num in range(1, 101):
-	if num % 15 == 0:
-		print"FizzBuzz"
-	elif num % 5 == 0:
-		print "Buzz"
-	elif num % 3 == 0:
-		print "Fizz"
-	else:  
-		print num
 def fizzbuzz(n):
 	print 'n in Fizzbuzz function', n
-	return 'Fizz'
+	if n % 15 == 0:
+		return 'FizzBuzz'
+	elif n % 5 == 0:
+		return 'Buzz'
+	elif n % 3 == 0:
+		return 'Fizz'
+	else:  
+		return ''
+
 
 testvalues = {3:'Fizz', 5:'Buzz', 15:'FizzBuzz'}
 print 'GOCOLTS*********************'
